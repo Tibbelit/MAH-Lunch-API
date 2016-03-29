@@ -38,7 +38,7 @@ class Niagara extends Restaurant{
                 foreach($element->find('tr') as $tr){
                     // Columns is in order [0] => category, [1] => title, [2] => price
                     $category = $tr->find('td')[0]->plaintext;
-                    if(date("N")-1 == $index){
+                    if(date("N")-1 == $day){
                         $json[$category] = $this->createDish($tr);
                     }
                 }

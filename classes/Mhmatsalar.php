@@ -58,10 +58,10 @@ class Mhmatsalar extends Restaurant{
                     if(date("N")-1 == $dayNr){
                         $dish = explode("\n", $element->plaintext);
                         if(sizeof($dish) > 1){
-                            $json[$day]["Dagens"] = $this->createDish($dish[0]);
-                            $json[$day]["Vegitariskt"] = $this->createDish($dish[1]);
+                            $json["Dagens"] = $this->createDish($dish[0]);
+                            $json["Vegitariskt"] = $this->createDish($dish[1]);
                         }else{
-                            $json[$day]["Dagens"] = $this->createDish($element->plaintext);
+                            $json["Dagens"] = $this->createDish($element->plaintext);
                         }
                     }
                 }
