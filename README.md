@@ -7,6 +7,7 @@ Ett enkelt API för att hämta ut dagens eller veckans lunch från några restau
 - [MiaMarias](http://restaurangniagara.se/)
 - [Välfärden](http://valfarden.nu/)
 - [Lilla Köket](http://lillakoket.com/)
+- [MH Matsalar](http://www.mhmatsalar.se/)
 
 ## Kom igång
 
@@ -55,6 +56,7 @@ På URL: [http://mahlunch.antontibblin.se/](http://mahlunch.antontibblin.se/) fi
 - [http://mahlunch.antontibblin.se/Miamaria](http://mahlunch.antontibblin.se/Miamaria)
 - [http://mahlunch.antontibblin.se/Lillakoket](http://mahlunch.antontibblin.se/Lillakoket)
 - [http://mahlunch.antontibblin.se/Valfarden](http://mahlunch.antontibblin.se/Valfarden)
+- [http://mahlunch.antontibblin.se/Mhmatsalar](http://mahlunch.antontibblin.se/Mhmatsalar)
 
 #### Hämta ut dagens meny för angiven restaurang
 
@@ -63,6 +65,7 @@ På URL: [http://mahlunch.antontibblin.se/](http://mahlunch.antontibblin.se/) fi
 - [http://mahlunch.antontibblin.se/Miamaria/today](http://mahlunch.antontibblin.se/Miamaria/today)
 - [http://mahlunch.antontibblin.se/Lillakoket/today](http://mahlunch.antontibblin.se/Lillakoket/today)
 - [http://mahlunch.antontibblin.se/Valfarden/today](http://mahlunch.antontibblin.se/Valfarden/today)
+- [http://mahlunch.antontibblin.se/Mhmatsalar/today](http://mahlunch.antontibblin.se/Mhmatsalar/today)
 
 #### Hämta ut de tillgänglia restaurangerna
 

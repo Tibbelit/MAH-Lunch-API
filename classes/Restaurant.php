@@ -7,7 +7,7 @@ class Restaurant{
     public $daysSv = array("Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag");
 
     public static function restaurants(){
-        return ["Niagara", "Miamaria", "Valfarden", "Lillakoket", "Labonnevie"];
+        return ["Niagara", "Miamaria", "Valfarden", "Lillakoket", "Labonnevie", "Mhmatsalar"];
     }
 
 }
