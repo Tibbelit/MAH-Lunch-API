@@ -8,6 +8,10 @@ Ett enkelt API för att hämta ut dagens eller veckans lunch från några restau
 - [Välfärden](http://valfarden.nu/)
 - [Lilla Köket](http://lillakoket.com/)
 
+## Kom igång
+
+Du behöver ha PHP installerat (har du inte det kan du enkelt installera det genom t.ex. [XAMPP](https://www.apachefriends.org)). Navigera sedan till mappen dit du klonat projektet och kör: `php -S localhost:8000`. Du surfar sedan till tjänsten genom valfri webbläsare med adressen `localhost:8000/`.
+
 ## Anrop
 
 Följande GET-anrop kan göras:
