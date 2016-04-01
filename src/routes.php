@@ -48,12 +48,12 @@ $app->get('/slack', function ($request, $response, $args) {
 		$att[] = $rJson;
     }
 	
-	$url = 'https://hooks.slack.com/services/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';
+	$url = 'https://hooks.slack.com/services/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';
 	$json = new ArrayObject();
 	$json["text"] = "Dagens lunch presenteras genom API: <http://mahlunch.antontibblin.se|MAHLunch> (<https://github.com/Tibbelit/MAH-Lunch-API|Github>), mer info hittar ni på <http://niagaralunch.antontibblin.se|Webbappen: NiagaraLunch> (<https://github.com/Tibbelit/MAH-Lunch-Webapp|Github>)";
 	$json["username"] = "Lunchdags";
 	$json["icon_emoji"] = ":hamburger:";
-	$json["channel"] = "Antons";
+	//$json["channel"] = "Lunch";
 	$json["mrkdwn"] = true;
 	$json["attachments"] = $att;
 	$data = array('payload' => json_encode($json));
@@ -68,6 +68,7 @@ $app->get('/slack', function ($request, $response, $args) {
 	);
 	$context  = stream_context_create($options);
 	$result = file_get_contents($url, false, $context);
+	//echo json_encode($json);
 });
 
 /*
