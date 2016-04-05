@@ -20,9 +20,9 @@ class Miamaria extends Restaurant{
                         $price = "";
                     }
                 }
-                if(sizeof($tr->find("p")) > 0){
-                    if($index < 5){
-                        $json[$this->days[$index]][$category] = $this->createDish($tr->find("p")[0]->plaintext, $price);
+                if(sizeof($tr->find("td")) > 0){
+                    if($index < 5 and $tr->find("td")[0]->plaintext != ""){
+                        $json[$this->days[$index]][$category] = $this->createDish($tr->find("td")[0]->plaintext, $price);
                     }
                 }
             }
@@ -47,10 +47,10 @@ class Miamaria extends Restaurant{
                         $price = "";
                     }
                 }
-                if(sizeof($tr->find("p")) > 0){
-                    if($index < 5){
+                if(sizeof($tr->find("td")) > 0){
+                    if($index < 5 and $tr->find("td")[0]->plaintext != ""){
                         if(date("N")-1 == $index){
-                            $json[$category] = $this->createDish($tr->find("p")[0]->plaintext, $price);
+                            $json[$category] = $this->createDish($tr->find("td")[0]->plaintext, $price);
                         }
                     }
                 }
