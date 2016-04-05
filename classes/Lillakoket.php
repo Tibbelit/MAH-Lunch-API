@@ -51,7 +51,7 @@ class Lillakoket extends Restaurant{
 
     private function createDish($title){
         $food = new ArrayObject();
-        $food["title"] = $title;
+        $food["title"] = trim(preg_replace('/[0-9]+./', '', $title));
         $food["price"] = "";
         return $food;
     }
