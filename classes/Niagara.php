@@ -51,7 +51,7 @@ class Niagara extends Restaurant{
     private function createDish($tr){
         $food = new ArrayObject();
         $food["title"] = $tr->find('td')[1]->plaintext;
-        $food["price"] = (int)filter_var($tr->find('td')[2]->plaintext, FILTER_SANITIZE_NUMBER_INT);
+        $food["price"] = filter_var($tr->find('td')[2]->plaintext, FILTER_SANITIZE_NUMBER_INT);
         return $food;
     }
 }
