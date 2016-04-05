@@ -47,7 +47,7 @@ $app->get('/slack', function ($request, $response, $args) {
 		$rJson["mrkdwn_in"] = ["text", "pretext"];
 		$att[] = $rJson;
     }
-	
+
 	$url = 'https://hooks.slack.com/services/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';
 	$json = new ArrayObject();
 	$json["text"] = "Dagens lunch presenteras genom API: <http://mahlunch.antontibblin.se|MAHLunch> (<https://github.com/Tibbelit/MAH-Lunch-API|Github>), mer info hittar ni på <http://niagaralunch.antontibblin.se|Webbappen: NiagaraLunch> (<https://github.com/Tibbelit/MAH-Lunch-Webapp|Github>)";
@@ -90,6 +90,7 @@ $app->get('/{restaurant}', function ($request, $response, $args) {
     }
     $response = $response->withHeader('Access-Control-Allow-Origin', '*');
     $response = $response->withStatus(200);
+    $response = $response->withHeader('Content-type', 'application/json');
     $response = $response->withJson(json_decode($restaurant->getWeekMenu()));
     return $response;
 });
