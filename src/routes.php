@@ -6,7 +6,11 @@ $app->get('/', function ($request, $response, $args) {
     $json = new ArrayObject();
     foreach($restaurants as $restaurant){
         $r = new $restaurant();
-        $json[$r->name] = json_decode($r->getWeekMenu());
+		try{
+			$json[$r->name] = json_decode($r->getWeekMenu());
+		}catch(Exception $error){
+			// Do nothing at the moment
+		}
     }
     $response = $response->withHeader('Access-Control-Allow-Origin', '*');
     $response = $response->withStatus(200);

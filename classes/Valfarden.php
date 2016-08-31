@@ -8,7 +8,7 @@ class Valfarden extends Restaurant{
     public function getWeekMenu(){
         $page = file_get_html($this->url);
         $json = new ArrayObject();
-
+		
         // Every day is a paragraph (Dööhhh!), collecting dishses
         $dishes = [];
         $day = 0;
